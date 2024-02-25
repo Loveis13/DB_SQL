@@ -6,6 +6,6 @@ import ru.hogwards.school.model.Faculty;
 import java.util.List;
 
 public interface FacultyRepository extends JpaRepository <Faculty,Long> {
-    List<Faculty> findByNameIgnoreCaseOOrderColorIgnoreCase(String name,String color);
+    List<Faculty> findByNameIgnoreCaseOrColorIgnoreCase(String name,String color);
 
 }
